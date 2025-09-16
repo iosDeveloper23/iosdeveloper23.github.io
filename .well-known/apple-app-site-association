@@ -1,0 +1,18 @@
+{
+  "webcredentials": {
+    "apps": [
+      "72G8QYM7HH.edu.umass.cics.cicscareers.your-ios-project123"
+    ]
+  },
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "72G8QYM7HH.edu.umass.cics.cicscareers.your-ios-project123",
+        "paths": [
+          "*"
+        ]
+      }
+    ]
+  }
+}
