@@ -1,29 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .log-in__form {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 2rem;
+      width: 360px;
+      box-sizing: border-box;
+    }
+    .login__LoginContentWrapper-sc-1jloc4o-0 {
+      display: flex;
+      flex-direction: column;
+    }
+    fieldset {
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    input {
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input:focus {
+      border-color: #007aff;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+      color: #333;
+    }
+    button {
+      display: inline-block;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      margin-top: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #007aff;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #005ecb;
+    }
+    .disclaimer-text {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #007aff;
+    }
+  </style>
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-form">
-            <h2>Login</h2>
-            <form id="loginForm">
-                <div class="form-group">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" autocomplete="username" required>
+  <!-- ✅ Your provided form, untouched except for indentation -->
+  <div class="log-in__form" data-at="login-form-sidebar">
+    <div data-at="login-form-sidebar">
+      <div class="animated-slider__StyledDiv-sc-8m1kol-0 bjpubP" style="opacity: 1; transform: none;">
+        <div class="login__LoginContentWrapper-sc-1jloc4o-0 cWVeHt">
+          <div color="--error" class="notification-card__Wrapper-sc-e0vemi-0 eanQLb login-form-notification" style="height: 0px; width: 100%; overflow-y: hidden;">
+            <div data-at="login-form-notification" class="notification-card__Container-sc-e0vemi-1 dPiBke">
+              <div class="notification-card__IconWrapper-sc-e0vemi-2 ydgaJ">
+                <!-- SVG warning icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35.5" viewBox="0 0 24 24" data-at="svg-warning-line" class="icon--sprite">
+                  <path d="M12 17a.97.97 0 0 0 .713-.288A.97.97 0 0 0 13 16a.97.97 0 0 0-.287-.713A.97.97 0 0 0 12 15a.97.97 0 0 0-.712.287A.97.97 0 0 0 11 16q0 .424.288.712A.97.97 0 0 0 12 17m0-4a.97.97 0 0 0 .713-.288A.97.97 0 0 0 13 12V8a.97.97 0 0 0-.287-.713A.97.97 0 0 0 12 7a.97.97 0 0 0-.712.287A.97.97 0 0 0 11 8v4q0 .424.288.712A.97.97 0 0 0 12 13m0 9a9.7 9.7 0 0 1-3.9-.788 10.1 10.1 0 0 1-3.175-2.137q-1.35-1.35-2.137-3.175A9.7 9.7 0 0 1 2 12q0-2.075.788-3.9a10.1 10.1 0 0 1 2.137-3.175q1.35-1.35 3.175-2.138A9.7 9.7 0 0 1 12 2q2.075 0 3.9.787a10.1 10.1 0 0 1 3.175 2.138q1.35 1.35 2.137 3.175A9.7 9.7 0 0 1 22 12a9.7 9.7 0 0 1-.788 3.9 10.1 10.1 0 0 1-2.137 3.175q-1.35 1.35-3.175 2.137A9.7 9.7 0 0 1 12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4 6.325 6.325 4 12t2.325 5.675T12 20"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- ✅ LOGIN FORM START -->
+          <form action="#" novalidate id="login-form" autocomplete="on">
+            <div class="field-wrappers__FieldWrapper-sc-1wtg0rp-1 dbQvYf">
+              <fieldset class="inputstyles__StyledFieldset-sc-19oarng-0 cJvhXG automation-test-login-email-field" data-at="fieldset-loginEmail">
+                <div class="inputstyles__StyledInputWrapper-sc-19oarng-1 hunvPt">
+                  <label for="loginEmail">E-Mail-Adresse</label>
+                  <input id="loginEmail" data-at="input-loginEmail" placeholder="" autocomplete="username"
+                    enterkeyhint="next" inputmode="email"
+                    class="inputstyles__StyledInput-sc-19oarng-3 kttFOI"
+                    type="email" value="" name="loginEmail"
+                    title="Bitte gib eine gültige E-Mail Adresse ein" required>
                 </div>
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" pattern="^((?=\S*?[a-z])(?=\S*?[0-9]).{5,15})\S$" autocomplete="current-password" required>
+              </fieldset>
+            </div>
+
+            <div class="field-wrappers__FieldWrapper-sc-1wtg0rp-1 dbQvYf">
+              <fieldset class="inputstyles__StyledFieldset-sc-19oarng-0 cJvhXG automation-test-login-password-field" data-at="fieldset-loginPassword">
+                <div class="inputstyles__StyledInputWrapper-sc-19oarng-1 hunvPt">
+                  <label for="loginPassword">Passwort</label>
+                  <input id="loginPassword" data-at="input-loginPassword"
+                    pattern="^((?=\S*?[a-z])(?=\S*?[0-9]).{5,15})\S$"
+                    placeholder="" autocomplete="current-password"
+                    required minlength="6" maxlength="200"
+                    enterkeyhint="go"
+                    class="inputstyles__StyledInput-sc-19oarng-3 kttFOI"
+                    type="password" value="" name="loginPassword"
+                    title="Ungültiges Passwort">
                 </div>
-                <button type="submit">Login</button>
-            </form>
-            <div id="message" class="message"></div>
+              </fieldset>
+            </div>
+
+            <fieldset class="input-wrap u-relative">
+              <button data-at="login-button-usernametab" type="submit"
+                class="buttons__StyledButton-sc-16eggpl-0 kOMYVT buttons__Button-sc-16eggpl-1 efhZYn buttons__ButtonPrimary-sc-16eggpl-2 cQWBPM"
+                tabindex="0">
+                Einloggen
+              </button>
+            </fieldset>
+
+            <a class="btn btn--tertiary u-mt1" data-at="forgotpass-button-usernametab" href="/de/reset-password-start">
+              <div class="disclaimer-text">Passwort vergessen?</div>
+            </a>
+          </form>
+          <!-- ✅ LOGIN FORM END -->
         </div>
+      </div>
     </div>
-    <script src="script.js"></script>
+  </div>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', e => {
+      e.preventDefault();
+      const email = document.getElementById('loginEmail').value;
+      const pass = document.getElementById('loginPassword').value;
+      alert(`Submitted:\nEmail: ${email}\nPassword: ${pass}`);
+    });
+  </script>
 </body>
 </html>
